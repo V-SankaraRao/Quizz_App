@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.box{
+    width: 100vw;
+    background-color: blueviolet;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   
+
+}
+@media (max-width:400px) {
+    .quizz{
+        width: 90%;
+        margin: 0px 10px;
+        
+    }
+    
+    
+}
+.quizz{
+    height: 500px;
+    width: 700px;
+    background-color: aqua;
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+.quizz h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+    
+}
+.quizz h2{
+    font-family: cursive;
+    font-weight: bold;
+    font-size:30px ;
+}
+hr{
+    background-color: blue;
+    width: 100%;
+    height: 5px;
+    margin: 10px 0;
+    border: none;
+}
+#options .btn{
+    width: 100%;
+    margin: 30px 0 0px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.8s;
+}
+.correct{
+    background-color: green;
+    color: white;
+}
+.incorrect{
+    background-color: grey;
+    color: whitesmoke;
+}
+#next{
+    background-color: blue;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    margin: 30px;
+    cursor: pointer;
+    color: whitesmoke;
+    border: none;
+}
+#options .btn:hover:not([disabled]){
+    background-color: black;
+    color: white;
+}
+#options .btn:disabled{
+    cursor: no-drop;
+}
